@@ -46,6 +46,11 @@ app.post('/signup',(req, res) => {
     res.send('signup berhasil')
 })
 
+app.post('/private',(req, res) => {
+    console.log({ requestFromOutside: req.body})
+    res.send('signup berhasil')
+})
+
 app.put('/username',(req, res) => {
     console.log({ updateData:req.body})
     res.send('update put')
